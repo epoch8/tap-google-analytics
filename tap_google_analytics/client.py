@@ -49,7 +49,7 @@ class GoogleAnalyticsStream(Stream):
         if attribute == "ga:segment":
             return "string"
         elif attribute.startswith(
-            ("ga:dimension", "ga:customVarName", "ga:customVarValue")
+            ("ga:dimension", "ga:customVarName", "ga:customVarValue", "ga:clientId")
         ):
             # Custom Google Analytics Dimensions that are not part of
             #  self.dimensions_ref. They are always strings

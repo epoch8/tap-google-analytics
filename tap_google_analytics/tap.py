@@ -255,6 +255,7 @@ class TapGoogleAnalytics(Tap):
                         "ga:customVarName",
                         "ga:customVarValue",
                         "ga:segment",
+                        "ga:clientId"
                     )
                 )
                 and dimension not in self.dimensions_ref
